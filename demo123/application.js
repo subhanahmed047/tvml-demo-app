@@ -30,29 +30,29 @@
  * The location attribute is automatically added to the object and represents 
  * the URL that was used to retrieve the application JavaScript.
  */
-App.onLaunch = function(options) {
-    var alert = createAlert("Hello World!", "Welcome to tvOS");
+App.onLaunch = (options) => {
+    const alert = createAlert("Hello World!", "Welcome to tvOS");
     navigationDocument.pushDocument(alert);
 }
 
 
-App.onWillResignActive = function() {
+App.onWillResignActive = () => {
 
 }
 
-App.onDidEnterBackground = function() {
+App.onDidEnterBackground = () => {
 
 }
 
-App.onWillEnterForeground = function() {
+App.onWillEnterForeground = () => {
     
 }
 
-App.onDidBecomeActive = function() {
+App.onDidBecomeActive = () => {
     
 }
 
-App.onWillTerminate = function() {
+App.onWillTerminate = () => {
     
 }
 
@@ -60,9 +60,9 @@ App.onWillTerminate = function() {
 /**
  * This convenience funnction returns an alert template, which can be used to present errors to the user.
  */
-var createAlert = function(title, description) {
+const createAlert = (title, description) => {
 
-    var alertString = `<?xml version="1.0" encoding="UTF-8" ?>
+    const alertString = `<?xml version="1.0" encoding="UTF-8" ?>
         <document>
           <alertTemplate>
             <title>${title}</title>
@@ -70,9 +70,7 @@ var createAlert = function(title, description) {
           </alertTemplate>
         </document>`
 
-    var parser = new DOMParser();
-
-    var alertDoc = parser.parseFromString(alertString, "application/xml");
+    const alertDoc = new DOMParser().parseFromString(alertString, "application/xml");
 
     return alertDoc
 }
