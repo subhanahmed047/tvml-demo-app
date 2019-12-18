@@ -1,76 +1,8 @@
-const templateString = `<?xml version="1.0" encoding="UTF-8" ?>
-<document>
-    <catalogTemplate>
-        <banner>
-            <title>Popular Titles</title>
-        </banner>
-        <list>
-            <section>
-                <listItemLockup>
-                    <title>All Titles</title>
-                    <decorationLabel>6</decorationLabel>
-                    <relatedContent>
-                        <grid>
-                            <section>
-                                <lockup>
-                                    <img src="https://loremflickr.com/250/376" width="250" height="376" />
-                                    <title>Movie 1</title>
-                                </lockup>
-                                <lockup>
-                                    <img src="https://loremflickr.com/250/376" width="250" height="376" />
-                                    <title>Movie 2</title>
-                                </lockup>
-                                <lockup>
-                                    <img src="https://loremflickr.com/250/376" width="250" height="376" />
-                                    <title>Movie 3</title>
-                                </lockup>
-                                <lockup>
-                                    <img src="https://loremflickr.com/250/376" width="250" height="376" />
-                                    <title>Movie 4</title>
-                                </lockup>
-                                <lockup>
-                                    <img src="https://loremflickr.com/250/376" width="250" height="376" />
-                                    <title>Movie 5</title>
-                                </lockup>
-                                <lockup>
-                                    <img src="https://loremflickr.com/250/376" width="250" height="376" />
-                                    <title>Movie 6</title>
-                                </lockup>
-                            </section>
-                        </grid>
-                    </relatedContent>
-                </listItemLockup>
-                <listItemLockup>
-                    <title>Pets</title>
-                    <decorationLabel>4</decorationLabel>
-                    <relatedContent>
-                        <grid>
-                            <section>
-                                <lockup>
-                                    <img src="https://loremflickr.com/250/376" width="250" height="376" />
-                                    <title>Movie 2</title>
-                                </lockup>
-                                <lockup>
-                                    <img src="https://loremflickr.com/250/376" width="250" height="376" />
-                                    <title>Movie 1</title>
-                                </lockup>
-                                <lockup>
-                                    <img src="https://loremflickr.com/250/376" width="250" height="376" />
-                                    <title>Movie 4</title>
-                                </lockup>
-                                <lockup>
-                                    <img src="https://loremflickr.com/250/376" width="250" height="376" />
-                                    <title>Movie 3</title>
-                                </lockup>
-                            </section>
-                        </grid>
-                    </relatedContent>
-                </listItemLockup>
-            </section>
-        </list>
-    </catalogTemplate>
-</document>`;
+import template from "./xml/home.xml";
+
+console.log({ template });
+
 export const homeTemplate = new DOMParser().parseFromString(
-  templateString,
-  'text/xml'
+  template,
+  "text/xml"
 );

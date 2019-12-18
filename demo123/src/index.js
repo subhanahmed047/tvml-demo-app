@@ -1,16 +1,25 @@
-import { homeTemplate } from './templates/index.xml.js';
+// import { homeTemplate } from './templates/index.xml.js';
 
-App.onLaunch = () => {
-  console.log(homeTemplate);
-  navigationDocument.pushDocument(homeTemplate);
-};
+// App.onLaunch = () => {
+//   console.log(homeTemplate);
+//   navigationDocument.pushDocument(homeTemplate);
+// };
 
-App.onWillResignActive = () => {};
+// App.onWillResignActive = () => {};
 
-App.onDidEnterBackground = () => {};
+// App.onDidEnterBackground = () => {};
 
-App.onWillEnterForeground = () => {};
+// App.onWillEnterForeground = () => {};
 
-App.onDidBecomeActive = () => {};
+// App.onDidBecomeActive = () => {};
 
-App.onWillTerminate = () => {};
+// App.onWillTerminate = () => {};
+
+import template from "./templates/xml/home.xml";
+
+console.log({ template });
+
+export const homeTemplate = new DOMParser().parseFromString(
+  template,
+  "text/xml"
+);
