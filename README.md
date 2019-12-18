@@ -1,5 +1,5 @@
 # tvml-demo-app
-This simple app  shows random titles on the TV screen. The purpose is to demonstrate the working of a TVOS app using TVML. 
+This simple app  shows random titles on the TV screen. The purpose is to demonstrate the working of a TVOS app using TVML and webpack. 
 
 To start the app you must have a running server to load the javascript files. To do so follow the steps below:
 
