@@ -6,7 +6,7 @@ To start the app you must have a running server to load the javascript files. To
 1. Open a new terminal at your app folder.
 2. Run the following command before running the simulator:
 
-`ruby -run -ehttpd . -p9001`
+`npm run start`
 
 3. Run the simulator.
 
