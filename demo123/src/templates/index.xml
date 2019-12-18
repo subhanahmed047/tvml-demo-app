@@ -1,4 +1,4 @@
-const templateString = `<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <document>
     <catalogTemplate>
         <banner>
@@ -69,8 +69,4 @@ const templateString = `<?xml version="1.0" encoding="UTF-8" ?>
             </section>
         </list>
     </catalogTemplate>
-</document>`;
-export const homeTemplate = new DOMParser().parseFromString(
-  templateString,
-  'text/xml'
-);
+</document>

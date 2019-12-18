@@ -1,8 +1,8 @@
-import { homeTemplate } from './templates/index.xml.js';
+import homeTemplate from './templates/index.xml';
 
 App.onLaunch = () => {
-  console.log(homeTemplate);
-  navigationDocument.pushDocument(homeTemplate);
+  const template = new DOMParser().parseFromString(homeTemplate, 'text/xml');
+  navigationDocument.pushDocument(template);
 };
 
 App.onWillResignActive = () => {};

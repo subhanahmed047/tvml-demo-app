@@ -11,8 +11,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.xml$/,
-        use: ['xml-loader']
+        test: /\.xml$/i,
+        use: 'raw-loader'
       }
     ]
   }
